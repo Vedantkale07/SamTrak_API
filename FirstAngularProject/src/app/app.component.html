@@ -1,0 +1,22 @@
+<h1 style="color: coral;">Interpolation</h1>
+<h2>{{title}} This is My Title</h2>
+
+<h3>value of number: {{num}}</h3>
+
+<!-- property Binding  -->
+ <!-- here we have used property binding to "disable" bcz of 
+  value is in bollean format-->
+
+<input type="text" value="{{num}}" [disabled]=wantToDisable>
+
+<h1>Event Binding </h1>
+
+<button (Click)="clickMe()" >Click me</button>
+
+<div (mouseover)="(mouseOver())">
+<p>This is Paragraph</p>
+</div>
+
+<input type="text" [(ngModel)]="myVal">
+
+<p>{{myVal}}</p>
